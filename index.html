@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Frontend Mentor | Age calculator app</title>
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css" href="./css/style.min.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/b69fb5b7db.css" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/b69fb5b7db.js" crossorigin="anonymous"></script>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <form action="">
+
+            <div class="group">
+                <label for="Day">Day</label>
+                <input type="text" placeholder="DD" name="Day" id="dayInp" maxlength="2">
+                <p class="invalid" id="invalidDayEl">This field is required</p>
+            </div>
+
+            <div class="group">
+                <label for="Month">Month</label>
+                <input type="text" placeholder="MM" name="Month" id="monthInp" maxlength="2">
+                <p class="invalid" id="invalidMonthEl">This field is required</p>
+            </div>
+
+            <div class="group">
+                <label for="Year">Year</label>
+                <input type="text" placeholder="YYYY" name="Year" id="yearInp" maxlength="4">
+                <p class="invalid" id="invalidYearEl">This field is required</p>
+            </div>
+
+            <div class="arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="34" viewBox="0 0 46 44">
+                    <g fill="none" stroke="#FFF" stroke-width="3">
+                        <path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/>
+                    </g>
+                </svg>
+            </div>
+        </form>
+
+        <section>
+
+            <p id="yearEl"><span>- -</span> years</p>
+            <p id="monthEl"><span>- -</span> months</p>
+            <p id="dayEl"><span>- -</span> days</p>
+
+
+        </section>
+
+    </div>
+
+</body>
+
+<script src="./script/script.js" type="module"></script>
+</html>
